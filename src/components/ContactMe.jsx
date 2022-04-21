@@ -39,7 +39,7 @@ const ContactMe = () => {
     <Contact>
       <H2>Interested in doing a project together?</H2>
       <Decoration></Decoration>
-      <SecondaryButton to="/contact" text="Contact Me" width="10.125rem" />
+      <SecondaryButton to="/contact" text="Contact Me" size="10.125rem" />
     </Contact>
   );
 };

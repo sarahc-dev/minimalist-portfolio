@@ -6,6 +6,10 @@ import ContactMe from "../components/ContactMe";
 const Hero = styled.div`
   margin-bottom: 6rem;
   position: relative;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 9.375rem;
+  }
 `;
 
 const HeroText = styled.div`
@@ -79,7 +83,7 @@ const Home = () => {
         <HeroImg />
         <HeroText>
           <H1>Hey, I’m Alex Spencer and I love building beautiful websites</H1>
-          <PrimaryButton to="/#about" text="About me" width="12.5rem" />
+          <PrimaryButton to="/#about" text="About me" size="12.5rem" />
         </HeroText>
       </Hero>
       <About>
@@ -92,7 +96,7 @@ const Home = () => {
             I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in
             London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
           </P>
-          <SecondaryButton to="/portfolio" text="Go to portfolio" width="12.625rem" />
+          <SecondaryButton to="/portfolio" text="Go to portfolio" size="12.625rem" />
         </AboutText>
       </About>
       <ContactMe />

@@ -9,7 +9,7 @@ const NotFound = () => {
   return (
     <main>
       <H1>Page not found!</H1>
-      <SecondaryButton to="/" text="Go Home" width="8rem" />
+      <SecondaryButton to="/" text="Go Home" size="8rem" />
     </main>
   );
 };

@@ -80,9 +80,9 @@ const Secondary = styled(BaseStyle)`
   }
 `;
 
-export const PrimaryButton = ({ to, text, width }) => {
+export const PrimaryButton = ({ to, text, size }) => {
   return (
-    <Primary href={to} width={width}>
+    <Primary href={to} width={size}>
       <Arrows>
         <Svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
           <g fill="none" fillRule="evenodd" stroke="#5FB4A2">
@@ -97,9 +97,9 @@ export const PrimaryButton = ({ to, text, width }) => {
   );
 };
 
-export const SecondaryButton = ({ to, text, width }) => {
+export const SecondaryButton = ({ to, text, size }) => {
   return (
-    <Secondary to={to} width={width}>
+    <Secondary to={to} width={size}>
       {text}
     </Secondary>
   );

@@ -14,9 +14,9 @@ import ProfileDesktop2x from "../images/homepage/desktop/image-homepage-profile@
 export const HeroImg = () => {
   return (
     <picture>
-      <source media="(min-width: 1200px)" srcSet={`${HeroDesktop} 1110w, ${HeroDesktop2x} 2220w`} />
-      <source media="(min-width: 700px)" srcSet={`${HeroTablet} 688w, ${HeroTablet2x} 1376w`} />
-      <source srcSet={`${HeroMobile} 311w, ${HeroMobile2x} 622w`} />
+      <source media="(min-width: 1200px)" srcSet={`${HeroDesktop} 1110w, ${HeroDesktop2x} 2220w`} sizes="80vw" />
+      <source media="(min-width: 700px)" srcSet={`${HeroTablet} 688w, ${HeroTablet2x} 1376w`} sizes="80vw" />
+      <source srcSet={`${HeroMobile} 311w, ${HeroMobile2x} 622w`} sizes="80vw" />
       <img src={HeroMobile} alt="Computer screen showing pie charts on a desk" />
     </picture>
   );
@@ -25,9 +25,9 @@ export const HeroImg = () => {
 export const ProfileImg = () => {
   return (
     <picture>
-      <source media="(min-width: 1200px)" srcSet={`${ProfileDesktop} 540w, ${ProfileDesktop2x} 1080w`} />
-      <source media="(min-width: 700px)" srcSet={`${ProfileTablet} 281w, ${ProfileTablet2x} 562w`} />
-      <source srcSet={`${ProfileMobile} 311w, ${ProfileMobile2x} 622w`} />
+      <source media="(min-width: 1200px)" srcSet={`${ProfileDesktop} 540w, ${ProfileDesktop2x} 1080w`} sizes="40vw" />
+      <source media="(min-width: 700px)" srcSet={`${ProfileTablet} 281w, ${ProfileTablet2x} 562w`} sizes="40vw" />
+      <source srcSet={`${ProfileMobile} 311w, ${ProfileMobile2x} 622w`} sizes="80vw" />
       <img src={ProfileMobile} alt="Side profile of Alex" />
     </picture>
   );

@@ -143,9 +143,9 @@ const Project = () => {
       ) : (
         <>
           <picture>
-            <source media="(min-width: 1200px)" srcSet={`${getImage(project.images, "hero-desktop")} 1110w, ${getImage(project.images, "hero-desktop-2x")} 2220w`} />
-            <source media="(min-width: 700px)" srcSet={`${getImage(project.images, "hero-tablet")} 689w, ${getImage(project.images, "hero-tablet-2x")} 1378w`} />
-            <source srcSet={`${getImage(project.images, "hero")} 311w, ${getImage(project.images, "hero-2x")} 622w`} />
+            <source media="(min-width: 1200px)" srcSet={`${getImage(project.images, "hero-desktop")} 1110w, ${getImage(project.images, "hero-desktop-2x")} 2220w`} sizes="80vw" />
+            <source media="(min-width: 700px)" srcSet={`${getImage(project.images, "hero-tablet")} 689w, ${getImage(project.images, "hero-tablet-2x")} 1378w`} sizes="80vw" />
+            <source srcSet={`${getImage(project.images, "hero")} 311w, ${getImage(project.images, "hero-2x")} 622w`} sizes="80vw" />
             <img src={getImage(project.images, "hero")} alt={`A preview of the ${project.name} project`} />
           </picture>
           <FlexContainer>
@@ -157,16 +157,16 @@ const Project = () => {
                 <List>{project.language.join(" / ")}</List>
               </div>
 
-              <SecondaryButton to="#" text="Visit website" width="11.125rem" />
+              <SecondaryButton to="#" text="Visit website" size="11.125rem" />
             </Container>
             <Container2>
               <h3>Project Background</h3>
               <Background>{project.background}</Background>
               <H3>Static Previews</H3>
               <picture>
-                <source media="(min-width: 1200px)" srcSet={`${getImage(project.images, "preview1-desktop")} 635w, ${getImage(project.images, "preview1-desktop-2x")} 1270w`} />
-                <source media="(min-width: 700px)" srcSet={`${getImage(project.images, "preview1-tablet")} 689w, ${getImage(project.images, "preview1-tablet-2x")} 1378w`} />
-                <source srcSet={`${getImage(project.images, "preview1")} 311w, ${getImage(project.images, "preview1-2x")} 622w`} />
+                <source media="(min-width: 1200px)" srcSet={`${getImage(project.images, "preview1-desktop")} 635w, ${getImage(project.images, "preview1-desktop-2x")} 1270w`} sizes="50vw" />
+                <source media="(min-width: 700px)" srcSet={`${getImage(project.images, "preview1-tablet")} 689w, ${getImage(project.images, "preview1-tablet-2x")} 1378w`} sizes="80vw" />
+                <source srcSet={`${getImage(project.images, "preview1")} 311w, ${getImage(project.images, "preview1-2x")} 622w`} sizes="80vw" />
                 <Img src={getImage(project.images, "preview1")} alt={`A preview of the ${project.name} project`} />
               </picture>
               <picture>

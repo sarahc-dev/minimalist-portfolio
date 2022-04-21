@@ -75,15 +75,15 @@ const PortfolioItem = ({ name, description, images }) => {
   return (
     <Article>
       <Picture>
-        <source media="(min-width: 1200px)" srcSet={`${getImage(images, "portfolio-desktop")} 540w, ${getImage(images, "portfolio-desktop-2x")} 1080w`} />
-        <source media="(min-width: 700px)" srcSet={`${getImage(images, "portfolio-tablet")} 339w, ${getImage(images, "portfolio-tablet-2x")} 678w`} />
-        <source srcSet={`${getImage(images, "portfolio")} 311w, ${getImage(images, "portfolio-2x")} 622w`} />
+        <source media="(min-width: 1200px)" srcSet={`${getImage(images, "portfolio-desktop")} 540w, ${getImage(images, "portfolio-desktop-2x")} 1080w`} sizes="40vw" />
+        <source media="(min-width: 700px)" srcSet={`${getImage(images, "portfolio-tablet")} 339w, ${getImage(images, "portfolio-tablet-2x")} 678w`} sizes="50vw" />
+        <source srcSet={`${getImage(images, "portfolio")} 311w, ${getImage(images, "portfolio-2x")} 622w`} sizes="80vw" />
         <img src={getImage(images, "portfolio")} alt={`A preview of the ${name} project`} />
       </Picture>
       <PortfolioText>
         <h1>{name}</h1>
         <P>{description}</P>
-        <SecondaryButton to={name.toLowerCase()} text="View project" width="10.9375rem" />
+        <SecondaryButton to={name.toLowerCase()} text="View project" size="10.9375rem" />
       </PortfolioText>
     </Article>
   );
